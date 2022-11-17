@@ -1,15 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "afrlSHvxfTrahpdbo6nbJoJ2+KrozwPeomoy4y3StbtK2pWaHDXd89+sf8jevCgC5dAyVSkXko5Gj+6vPoDLUw==",
+  "dgSpecHash": "IT5VlUQP/UqC+sV60hNnxOiF2lGWGLuyJDnlqEit5gwkTlRKOxQEn6BPUEWIp8wQX1NPJfnt6FI0Xl2DCSBBbQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\kenn5073\\AndroidStudioProjects\\H4_WhiteBoard\\H4_WhiteBoard_API\\H4_WhiteBoard_API\\H4_WhiteBoard_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kenn5073\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\kenn5073\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\kenn5073\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
     "C:\\Users\\kenn5073\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\kenn5073\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\kenn5073\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
-    "C:\\Users\\kenn5073\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+    "C:\\Users\\kenn5073\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
+    "C:\\Users\\kenn5073\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }
