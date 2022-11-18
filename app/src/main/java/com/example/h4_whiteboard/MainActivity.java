@@ -189,13 +189,13 @@ public class MainActivity extends AppCompatActivity {
      * @param data
      * @return
      */
-    public Bitmap GetImage(Intent data) {
+    private Bitmap GetImage(Intent data) {
         Bundle extras = data.getExtras();
         return (Bitmap) extras.get("data");
     }
 
     //Create a listener, that listens on the "Save image to api?" dialog box
-    DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+    private DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
         @Override
         public void onClick(DialogInterface dialog, int which) {
             switch (which) {
