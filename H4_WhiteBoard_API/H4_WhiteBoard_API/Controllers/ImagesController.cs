@@ -16,21 +16,41 @@ namespace H4_WhiteBoard_API.Controllers
 
         };
 
+        static List<Image> imagesFromApp = new List<Image>();
+
         [HttpGet]
         public string Get()
         {
-                using (Image image = Image.FromFile(paths[1]))
+            using (Image image = Image.FromFile(paths[1]))
+            {
+                using (MemoryStream m = new MemoryStream())
                 {
-                    using (MemoryStream m = new MemoryStream())
-                    {
-                        image.Save(m, image.RawFormat);
-                        byte[] imageBytes = m.ToArray();
+                    image.Save(m, image.RawFormat);
+                    byte[] imageBytes = m.ToArray();
 
-                        // Convert byte[] to Base64 String
-                        return Convert.ToBase64String(imageBytes);
-                    }
+                    // Convert byte[] to Base64 String
+                    return Convert.ToBase64String(imageBytes);
                 }
-            
+            }
+
+        }
+
+        [HttpPost("SaveImages")]
+        public IActionResult SaveImage([FromForm] string base64Image)
+        {
+            try
+            {
+                byte[] imageBytes = Convert.FromBase64String(base64Image);
+                using (MemoryStream ms = new MemoryStream(imageBytes))
+                {
+                    imagesFromApp.Add(Image.FromStream(ms));
+                    return Ok();
+                }
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, e.Message);
+            }
         }
     }
 }

@@ -7,33 +7,46 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <Button
-        android:id="@+id/openButtonsMenuFragment"
-        android:layout_width="30sp"
-        android:layout_height="30sp"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="5dp"
-        />
-    <FrameLayout
-        android:id="@+id/fragmentButtonsMenu"
-        android:layout_width="match_parent"
-        android:layout_height="300pt" />
-
     <RelativeLayout
-        android:id="@+id/imagesContainer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:id="@+id/imagesContainer">
 
         <ImageView
             android:id="@+id/iv_Test"
+            android:src="@drawable/img001"
             android:layout_width="250dp"
             android:layout_height="250dp"
-            android:src="@drawable/img001"
-            android:layout_marginTop="300sp"/>
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" />
 
     </RelativeLayout>
 
+    <Button
+        android:id="@+id/createButton"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="Create Image!"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"/>
 
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:id="@+id/takePictureButton"
+        android:text="Take a picture"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/teal_700"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/removeAllButton"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="Remove All"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp" />
 
 </RelativeLayout>
