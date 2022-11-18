@@ -26,7 +26,7 @@
         android:id="@+id/createButton"
         android:layout_width="100dp"
         android:layout_height="60dp"
-        android:text="Create Image!"
+        android:text="Fetch Image"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="20dp"/>
